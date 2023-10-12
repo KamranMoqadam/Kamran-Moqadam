@@ -20,8 +20,8 @@
         </div>
     </div>
 </div>
-<div class="h-screen w-screen md:flex">
-    <div class="hidden justify-center items-center h-screen w-1/4 bg-black md:flex">
+<main class="h-screen md:flex">
+    <div class="hidden justify-center items-center h-screen w-1/4 bg-black md:flex" id="LeftSidebar">
         <div class="flex flex-col justify-center items-center">
             <div class="my-10">
                 <a class="flex justify-center" href="#">
@@ -46,8 +46,7 @@
         </div>
 
     </div>
-
-    <div class="md:hidden">
+    <div class="md:hidden" id="Navbar">
         <nav class="bg-black">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center">
@@ -161,10 +160,13 @@
                 </div>
             </div>
         </div>
-        <!-- ------------------------------------------------------------------------------------------------ -->
+    </div>
 
-        <div class="flex flex-col bg-gray-900 text-white" id="About">
-            <div class=" mt-14 ml-28">
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <div class="flex flex-col w-screen md:w-3/4 max-h-screen overflow-y-auto" id="About">
+        <div class="bg-gray-900 text-white">
+            <div class=" mt-14 mx-28">
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1  text-lg  text-gray-700 mr-2 mb-2">About</span>
                 <h3 class="text-4xl mt-12 font-black">About Me</h3>
             </div>
@@ -190,6 +192,7 @@
                     integrations to require little-to-no maintenance while running on their own for
                     years.</p>
             </div>
+
             <div class="flex justify-center items-center ">
                 <hr class="border-violet-900 my-10 w-4/5">
             </div>
@@ -244,16 +247,15 @@
             </div>
         </div>
 
-
-        <div class="flex flex-col md:flex-row bg-black px-28 ">
-            <div class="flex flex-col w-screen md:w-1/2">
+        <div class="flex flex-col md:flex-row bg-black px-28">
+            <div class="flex flex-col w-10/12 md:w-1/2 ">
                 <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Programming Languages</h3>
                 <div class="my-2 w-4/5">
                     <div class="flex justify-between mb-1 text-white">
                         <span class="text-base font-medium ">Python</span>
                         <span class="text-sm font-medium ">85%</span>
                     </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
+                    <div class="w-full bg-gray-700 rounded-full">
                         <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
                              style="width: 85%;"> 85%
                         </div>
@@ -398,7 +400,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col w-screen md:w-1/2 mb-10 md:mb-0">
+            <div class="flex flex-col w-10/12 md:w-1/2 mb-10 md:mb-0">
                 <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Networking and OS</h3>
                 <div class="my-2 w-4/5">
                     <div class="flex justify-between mb-1 text-white">
@@ -527,8 +529,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row bg-gray-900 px-28 py-28 text-white">
-            <div class="flex flex-col w-1/2">
+        <div class="flex flex-col md:flex-row bg-gray-900 px-28 py-28 text-white ">
+            <div class="flex flex-col w-1/2 mb-10 md:mb-0">
                 <h3 class="font-bold text-lg mb-5">Knowledge</h3>
                 <ul>
                     <li><span class="text-2xl font-bold px-4">&#8224;</span>
@@ -546,7 +548,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex flex-col w-1/2">
+            <div class="flex flex-col w-1/2 ">
                 <h3 class="font-bold text-lg mb-5">Interests</h3>
                 <ul>
                     <li><span class="text-2xl font-bold px-4">&#8224;</span>
@@ -632,17 +634,16 @@
             </div>
         </div>
     </div>
-
     <!-- ------------------------------------------------------------------------------------------------ -->
-    <div class="bg-gray-900" id="">
+    <div class="bg-gray-900 text-white" id="">
         <h1>hi</h1>
     </div>
-</div>
-
+</main>
 
 <!--<script src="./js/jquery-3.7.1.min.js"></script>-->
 <script src="./src/js/init.js"></script>
-<!--<script src="./js/click.js"></script>-->
+<!--<script src="./src/js/script.js"></script>-->
+<!--<script src="./src/js/click.js"></script>-->
 <script>
 
 
