@@ -83,560 +83,613 @@
     </div>
     <!-- ------------------------------------------------------------------------------------------------ -->
 
-    <div class="bg-gray-900 w-screen" id="Home">
-        <div class="flex flex-col items-center justify-center h-screen md:flex-row">
-            <div class=" flex flex-col justify-center items-center w-1/3  mb- 10  md:mb-0 md:inline-flex">
-                <div class="absolute animate-spin rounded-full h-64 w-64 border-t-4 border-b-4 border-purple-500 justify-center items-center"></div>
-                <img src="./src/img/me/me.jpg" alt="its me" class="rounded-full h-56 w-56">
-            </div>
-            <div class="flex flex-col justify-center w-2/3 text-left ">
-                <h1 class="text-6xl font-black text-white items-center md:items-start">KAMRAN <span>MOQADAM</span></h1>
-                <p class="text-white text-lg my-5 pr-5">I am a Web Developer at heart and create features
-                    that are
-                    best suited for the job
-                    at hand.</p>
-                <div>
-                    <ul class="flex flex-row text-white text-left ">
-                        <li class="my-5 mr-5">
-                            <a href="https://www.facebook.com/Kamranmoqadam">
-                                <!-- Facebook -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
-                                     viewBox="0 0 24 24">
-                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                                </svg>
+    <!--    <div class="bg-gray-900 w-screen" id="Home">-->
+    <!--        <div class="flex flex-col items-center justify-center h-screen md:flex-row">-->
+    <!--            <div class=" flex flex-col justify-center items-center w-1/3  mb- 10  md:mb-0 md:inline-flex">-->
+    <!--                <div class="absolute animate-spin rounded-full h-64 w-64 border-t-4 border-b-4 border-purple-500 justify-center items-center"></div>-->
+    <!--                <img src="./src/img/me/me.jpg" alt="its me" class="rounded-full h-56 w-56">-->
+    <!--            </div>-->
+    <!--            <div class="flex flex-col justify-center w-2/3 text-left ">-->
+    <!--                <h1 class="text-6xl font-black text-white items-center md:items-start">KAMRAN <span>MOQADAM</span></h1>-->
+    <!--                <p class="text-white text-lg my-5 pr-5">I am a Web Developer at heart and create features-->
+    <!--                    that are-->
+    <!--                    best suited for the job-->
+    <!--                    at hand.</p>-->
+    <!--                <div>-->
+    <!--                    <ul class="flex flex-row text-white text-left ">-->
+    <!--                        <li class="my-5 mr-5">-->
+    <!--                            <a href="https://www.facebook.com/Kamranmoqadam">-->
+    <!--                                &lt;!&ndash; Facebook &ndash;&gt;-->
+    <!--                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"-->
+    <!--                                     viewBox="0 0 24 24">-->
+    <!--                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>-->
+    <!--                                </svg>-->
 
-                            </a></li>
-                        <li class="my-5 mr-5">
-                            <a href="https://twitter.com/KamranMoqadam">
-                                <!-- Twitter -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
-                                     viewBox="0 0 24 24">
-                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                                </svg>
+    <!--                            </a></li>-->
+    <!--                        <li class="my-5 mr-5">-->
+    <!--                            <a href="https://twitter.com/KamranMoqadam">-->
+    <!--                                &lt;!&ndash; Twitter &ndash;&gt;-->
+    <!--                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"-->
+    <!--                                     viewBox="0 0 24 24">-->
+    <!--                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>-->
+    <!--                                </svg>-->
 
-                            </a></li>
-                        <li class="my-5 mr-5"><a href="https://github.com/KamranMoqadam">
-                            <!-- Github -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
-                                 viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
+    <!--                            </a></li>-->
+    <!--                        <li class="my-5 mr-5"><a href="https://github.com/KamranMoqadam">-->
+    <!--                            &lt;!&ndash; Github &ndash;&gt;-->
+    <!--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"-->
+    <!--                                 viewBox="0 0 24 24">-->
+    <!--                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>-->
+    <!--                            </svg>-->
 
-                        </a></li>
-                        <li class="my-5 mr-5"><a href="https://www.linkedin.com/in/kamran-moqadam/">
-                            <!-- Linkedin -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
-                                 viewBox="0 0 24 24">
-                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                            </svg>
+    <!--                        </a></li>-->
+    <!--                        <li class="my-5 mr-5"><a href="https://www.linkedin.com/in/kamran-moqadam/">-->
+    <!--                            &lt;!&ndash; Linkedin &ndash;&gt;-->
+    <!--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"-->
+    <!--                                 viewBox="0 0 24 24">-->
+    <!--                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>-->
+    <!--                            </svg>-->
 
-                        </a></li>
-                        <li class="my-5 mr-5"><a href="https://www.instagram.com/kamranmoqadam/">
-                            <!-- Instagram -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
-                                 viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
+    <!--                        </a></li>-->
+    <!--                        <li class="my-5 mr-5"><a href="https://www.instagram.com/kamranmoqadam/">-->
+    <!--                            &lt;!&ndash; Instagram &ndash;&gt;-->
+    <!--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"-->
+    <!--                                 viewBox="0 0 24 24">-->
+    <!--                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>-->
+    <!--                            </svg>-->
 
-                        </a></li>
-                        <li class="my-5 mr-5"><a href="https://t.me/kamranmoqadam">
-                            <!-- Telegram -->
-                            <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
-                                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-                            <path id="telegram-1"
-                                  d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/>
-                            </svg>
+    <!--                        </a></li>-->
+    <!--                        <li class="my-5 mr-5"><a href="https://t.me/kamranmoqadam">-->
+    <!--                            &lt;!&ndash; Telegram &ndash;&gt;-->
+    <!--                            <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"-->
+    <!--                                 xmlns="http://www.w3.org/2000/svg" xml:space="preserve"-->
+    <!--                                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">-->
+    <!--                            <path id="telegram-1"-->
+    <!--                                  d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/>-->
+    <!--                            </svg>-->
 
-                        </a></li>
-                        <li class="my-5 mr-5"><a href="https://wa.me/qr/G4JDLHOWVZHNM1">
-                            <!-- Whatsapp -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
-                                 fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                            </svg>
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--                        </a></li>-->
+    <!--                        <li class="my-5 mr-5"><a href="https://wa.me/qr/G4JDLHOWVZHNM1">-->
+    <!--                            &lt;!&ndash; Whatsapp &ndash;&gt;-->
+    <!--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"-->
+    <!--                                 fill="currentColor" viewBox="0 0 24 24">-->
+    <!--                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>-->
+    <!--                            </svg>-->
+    <!--                        </a></li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
 
     <!-- ------------------------------------------------------------------------------------------------ -->
 
-    <div class="flex flex-col w-screen md:w-3/4 max-h-screen overflow-y-auto" id="About">
-        <div class="bg-gray-900 text-white">
-            <div class=" mt-14 mx-28">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1  text-lg  text-gray-700 mr-2 mb-2">About</span>
-                <h3 class="text-4xl mt-12 font-black">About Me</h3>
-            </div>
-            <div class="flex justify-center items-center mt-20">
-                <img src="./src/img/me/me.jpg" alt="it's me" class="flex w-4/5 h-auto  justify-center items-center">
-            </div>
+    <!--    <div class="flex flex-col w-screen md:w-3/4 max-h-screen overflow-y-auto" id="About">-->
+    <!--        <div class="bg-gray-900 text-white">-->
+    <!--            <div class=" mt-14 mx-28">-->
+    <!--                <span class="inline-block bg-gray-200 rounded-full px-3 py-1  text-lg  text-gray-700 mr-2 mb-2">About</span>-->
+    <!--                <h3 class="text-4xl mt-12 font-black">About Me</h3>-->
+    <!--            </div>-->
+    <!--            <div class="flex justify-center items-center mt-20">-->
+    <!--                <img src="./src/img/me/me.jpg" alt="it's me" class="flex w-4/5 h-auto  justify-center items-center">-->
+    <!--            </div>-->
 
-            <div class="flex flex-col items-start mx-28 ">
-                <h3 class="text-2xl mt-14 font-bold">Kamran Moqadam</h3>
-                <span class="text-lg mt-2">Web Developer</span>
+    <!--            <div class="flex flex-col items-start mx-28 ">-->
+    <!--                <h3 class="text-2xl mt-14 font-bold">Kamran Moqadam</h3>-->
+    <!--                <span class="text-lg mt-2">Web Developer</span>-->
+    <!--            </div>-->
+    <!--            <div class="flex justify-center items-center">-->
+    <!--                <hr class="border-violet-900 my-10 w-4/5">-->
+    <!--            </div>-->
+    <!--            <div class="flex flex-col items-start mt-2 mx-28">-->
+    <!--                <p class="text-justify">Hi, my name is Kamran Moqadam and I began using WordPress when it first began.-->
+    <!--                    I’ve spent-->
+    <!--                    most of my waking hours for the last ten years designing, programming and operating-->
+    <!--                    WordPress sites.</p>-->
+    <!--                <p class="text-justify">One of my specialties is taking an idea from scratch and creating a full-fledged-->
+    <!--                    platform. I go beyond to produce sites with a unique, outstanding, contemporary-->
+    <!--                    look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex-->
+    <!--                    integrations to require little-to-no maintenance while running on their own for-->
+    <!--                    years.</p>-->
+    <!--            </div>-->
+
+    <!--            <div class="flex justify-center items-center ">-->
+    <!--                <hr class="border-violet-900 my-10 w-4/5">-->
+    <!--            </div>-->
+    <!--            <div class="flex flex-col md:flex-row mx-28 ">-->
+    <!--                <div class="flex flex-col w-screen md:w-1/2">-->
+    <!--                    <ul>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Birthday:</span>-->
+    <!--                            <span class="text-base ">04.09.1997</span></li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Age:</span>-->
+    <!--                            <span class="text-base">27</span>-->
+    <!--                        </li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Address:</span>-->
+    <!--                            <span class="text-base ">Valiasr st, Tehran, IRAN</span>-->
+    <!--                        </li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Email:</span>-->
+    <!--                            <span class="text-base hover:text-purple-700">-->
+    <!--                                <a href="mailto:kamranmoqadam97@gmail.com">kamranmoqadam97@gmail.com</a>-->
+    <!--                            </span></li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Phone:</span>-->
+    <!--                            <span class="text-base hover:text-purple-700">-->
+    <!--                                <a href="tel:+989129680187"> +98 912 96 80 187</a>-->
+    <!--                            </span>-->
+    <!--                        </li>-->
+    <!--                    </ul>-->
+
+    <!--                </div>-->
+    <!--                <div class="flex flex-col w-screen md:w-1/2">-->
+    <!--                    <ul>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Nationality:</span>-->
+    <!--                            <span>IRAN</span></li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Study:</span>-->
+    <!--                            <span>University of Tehran</span></li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Degree:</span>-->
+    <!--                            <span>Master</span></li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Interest:</span>-->
+    <!--                            <span>Learning</span></li>-->
+    <!--                        <li><span class="inline-block w-32 text-base font-bold">Freelance:</span>-->
+    <!--                            <span>Available</span></li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="flex justify-center items-center ">-->
+    <!--                <hr class="border-violet-900 my-10 w-4/5">-->
+    <!--            </div>-->
+
+    <!--            <div class="flex flex-col items-start mx-28 mb-20">-->
+    <!--                <button class="bg-blue-700 hover:bg-blue-950 text-white font-bold py-2 px-4 border border-blue-700 rounded">-->
+    <!--                    <a href="./src/img/me/me.jpg" download>-->
+    <!--                        <span>Download CV</span>-->
+    <!--                    </a>-->
+    <!--                </button>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div class="flex flex-col md:flex-row bg-black px-28">-->
+    <!--            <div class="flex flex-col w-10/12 md:w-1/2 ">-->
+    <!--                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Programming Languages</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Python</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Bash</span>-->
+    <!--                        <span class="text-sm font-medium ">45%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 45%;"> 45%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+
+
+    <!--                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Web Development</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Django</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Flask</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">FastAPi</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">HTML</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">CSS</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Databases</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Postgresql</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Redis</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">MongoBD</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Sqlite</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Version Control</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Git</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Virtualization and Containers</h3>-->
+    <!--                <div class="mt-2 mb-28 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Docker</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="flex flex-col w-10/12 md:w-1/2 mb-10 md:mb-0">-->
+    <!--                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Networking and OS</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Network+</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Linux</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Windows</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">User Interface</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">PYQT6</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Tailwind CSS</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Other Technologies</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Celery</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Rabbitmq</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Data Science</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Numpy</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Pandas</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Language Skills</h3>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">English</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="my-2 w-4/5">-->
+    <!--                    <div class="flex justify-between mb-1 text-white">-->
+    <!--                        <span class="text-base font-medium ">Persian</span>-->
+    <!--                        <span class="text-sm font-medium ">85%</span>-->
+    <!--                    </div>-->
+    <!--                    <div class="w-full bg-gray-700 rounded-full ">-->
+    <!--                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"-->
+    <!--                             style="width: 85%;"> 85%-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="flex flex-col md:flex-row bg-gray-900 px-28 py-28 text-white ">-->
+    <!--            <div class="flex flex-col w-1/2 mb-10 md:mb-0">-->
+    <!--                <h3 class="font-bold text-lg mb-5">Knowledge</h3>-->
+    <!--                <ul>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5">Software Engineering</span></li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5">Web Designer</span></li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5"></span>Data Scientist-->
+    <!--                    </li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5"></span>Deployment-->
+    <!--                    </li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5"></span>Network-->
+    <!--                    </li>-->
+    <!--                </ul>-->
+    <!--            </div>-->
+    <!--            <div class="flex flex-col w-1/2 ">-->
+    <!--                <h3 class="font-bold text-lg mb-5">Interests</h3>-->
+    <!--                <ul>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5">Develop Software</span></li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5">Make UI/UX Design</span></li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5"></span>Site Optimization-->
+    <!--                    </li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5"></span>Deploy-->
+    <!--                    </li>-->
+    <!--                    <li><span class="text-2xl font-bold px-4">&#8224;</span>-->
+    <!--                        <span class="text-base font-light my-1.5"></span>Custom Website-->
+    <!--                    </li>-->
+    <!--                </ul>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="bg-black flex flex-col md:flex-row  px-28 py-28 text-white">-->
+    <!--            <div class="flex flex-col w-1/2">-->
+    <!--                <ol class="relative border-l border-white">-->
+    <!--                    <li class="mb-10 ml-4">-->
+    <!--                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>-->
+    <!--                        <time class="mb-1 text-sm font-normal leading-none ">November 2023</time>-->
+    <!--                        <h3 class="text-lg font-bold text-white ">Islamic Azad University West Tehran Branch</h3>-->
+    <!--                        <p class="mb-4 text-base font-normal text-gray-500 ">Master Degree</p>-->
+    <!--                    </li>-->
+    <!--                    <li class="mb-10 ml-4">-->
+    <!--                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>-->
+    <!--                        <time class="mb-1 text-sm font-normal leading-none">February 2020</time>-->
+    <!--                        <h3 class="text-lg font-bold text-white">Islamic Azad University Central Tehran Branch</h3>-->
+    <!--                        <p class="text-base font-normal text-gray-500">Bachelor Degree</p>-->
+    <!--                    </li>-->
+    <!--                    <li class="ml-4">-->
+    <!--                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>-->
+    <!--                        <time class="mb-1 text-sm font-normal leading-none">September 2017</time>-->
+    <!--                        <h3 class="text-lg font-bold text-white">Islamic Azad University, Shahr-e-Rey Branch</h3>-->
+    <!--                        <p class="text-base font-normal text-gray-500">Associate Degree</p>-->
+    <!--                    </li>-->
+    <!--                </ol>-->
+    <!--            </div>-->
+
+    <!--            <div class="flex flex-col mt-8 md:m-0 w-1/2">-->
+    <!--                <ol class="relative border-l border-white">-->
+    <!--                    <li class="mb-10 ml-4">-->
+    <!--                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>-->
+    <!--                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 ">2022 - Present</time>-->
+    <!--                        <h3 class="text-lg font-bold text-white ">Petrotech</h3>-->
+    <!--                        <p class="mb-4 text-base font-normal text-gray-500 ">Web and Application Developer</p>-->
+    <!--                    </li>-->
+    <!--                    <li class="mb-10 ml-4">-->
+    <!--                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>-->
+    <!--                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 ">2022 - Present</time>-->
+    <!--                        <h3 class="text-lg font-bold text-white">Maktab Sharif</h3>-->
+    <!--                        <p class="text-base font-normal text-gray-500">Education Mentor</p>-->
+    <!--                    </li>-->
+    <!--                    <li class="ml-4">-->
+    <!--                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>-->
+    <!--                        <time class="mb-1 text-sm font-normal leading-none ">2020 - 2022</time>-->
+    <!--                        <h3 class="text-lg font-bold text-white">Studio Shotino</h3>-->
+    <!--                        <p class="text-base font-normal text-gray-500">Designers and Editor </p>-->
+    <!--                    </li>-->
+    <!--                </ol>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class=" flex flex-col bg-gray-900 px-28 py-28 text-white space-y-10 space-x-0 md:space-y-0 md:space-x-8 justify-center md:flex-row">-->
+    <!--            <div class="bg-gray-800 max-w-sm rounded overflow-hidden shadow-lg">-->
+    <!--                <div class="px-8 py-12">-->
+    <!--                    <p class="text-gray-400 text-base">-->
+    <!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et-->
+    <!--                        perferendis eaque, exercitationem praesentium nihil.-->
+    <!--                    </p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+    <!--            <div class="bg-gray-800 max-w-sm rounded overflow-hidden shadow-lg">-->
+    <!--                <div class="px-8 py-12">-->
+    <!--                    <p class="text-gray-400 text-base">-->
+    <!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et-->
+    <!--                        perferendis eaque, exercitationem praesentium nihil.-->
+    <!--                    </p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!-- ------------------------------------------------------------------------------------------------ -->
+    <div class="flex flex-col w-screen md:w-3/4 max-h-screen overflow-y-auto" id="Contact">
+        <div class="bg-gray-900 text-white h-screen">
+            <div class=" mt-14 mx-28">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1  text-lg  text-gray-700 mr-2 mb-2">Contact</span>
+                <h3 class="text-4xl mt-12 font-black">Contact</h3>
             </div>
             <div class="flex justify-center items-center">
-                <hr class="border-violet-900 my-10 w-4/5">
+                <iframe class="flex justify-center items-center w-3/4 mt-20"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.832195621087!2d51.399019775321754!3d35.681133629980174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e01ba37d2dcf1%3A0x760ad292727e7967!2sMonirieh%20Square!5e0!3m2!1sen!2s!4v1697114897352!5m2!1sen!2s"
+                        height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class="flex flex-col items-start mt-2 mx-28">
-                <p class="text-justify">Hi, my name is Kamran Moqadam and I began using WordPress when it first began.
-                    I’ve spent
-                    most of my waking hours for the last ten years designing, programming and operating
-                    WordPress sites.</p>
-                <p class="text-justify">One of my specialties is taking an idea from scratch and creating a full-fledged
-                    platform. I go beyond to produce sites with a unique, outstanding, contemporary
-                    look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex
-                    integrations to require little-to-no maintenance while running on their own for
-                    years.</p>
-            </div>
+            <div class="flex flex-col bg-gray-900 mt-14 h-screen">
+                <form>
+                    <div class="flex flex-row items-start mx-28 px-5 my-5">
+                        <div class="relative z-0 w-1/2 px-5">
+                            <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="first_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+                        </div>
+                        <div class="relative z-0 w-1/2 px-5">
+                            <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="last_name" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                        </div>
+                    </div>
+                        <div class="flex flex-row items-start mx-28 px-5 my-5">
+                            <div class="relative z-0 w-1/2 px-5">
+                                <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="email" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                            </div>
+                            <div class="relative z-0 w-1/2 px-5">
+                                <input type="text" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="phone" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone Number</label>
+                            </div>
+                        </div>
+                    <div class="flex flex-row items-start mx-28 px-5 my-5">
+                        <div class="relative z-0 w-screen px-5">
+                            <textarea id="message" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
 
-            <div class="flex justify-center items-center ">
-                <hr class="border-violet-900 my-10 w-4/5">
-            </div>
-            <div class="flex flex-col md:flex-row mx-28 ">
-                <div class="flex flex-col w-screen md:w-1/2">
-                    <ul>
-                        <li><span class="inline-block w-32 text-base font-bold">Birthday:</span>
-                            <span class="text-base ">04.09.1997</span></li>
-                        <li><span class="inline-block w-32 text-base font-bold">Age:</span>
-                            <span class="text-base">27</span>
-                        </li>
-                        <li><span class="inline-block w-32 text-base font-bold">Address:</span>
-                            <span class="text-base ">Valiasr st, Tehran, IRAN</span>
-                        </li>
-                        <li><span class="inline-block w-32 text-base font-bold">Email:</span>
-                            <span class="text-base hover:text-purple-700">
-                                <a href="mailto:kamranmoqadam97@gmail.com">kamranmoqadam97@gmail.com</a>
-                            </span></li>
-                        <li><span class="inline-block w-32 text-base font-bold">Phone:</span>
-                            <span class="text-base hover:text-purple-700">
-                                <a href="tel:+989129680187"> +98 912 96 80 187</a>
-                            </span>
-                        </li>
-                    </ul>
+                            </textarea>
+                            <label for="message" class="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                        </div>
 
-                </div>
-                <div class="flex flex-col w-screen md:w-1/2">
-                    <ul>
-                        <li><span class="inline-block w-32 text-base font-bold">Nationality:</span>
-                            <span>IRAN</span></li>
-                        <li><span class="inline-block w-32 text-base font-bold">Study:</span>
-                            <span>University of Tehran</span></li>
-                        <li><span class="inline-block w-32 text-base font-bold">Degree:</span>
-                            <span>Master</span></li>
-                        <li><span class="inline-block w-32 text-base font-bold">Interest:</span>
-                            <span>Learning</span></li>
-                        <li><span class="inline-block w-32 text-base font-bold">Freelance:</span>
-                            <span>Available</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex justify-center items-center ">
-                <hr class="border-violet-900 my-10 w-4/5">
-            </div>
+                    </div>
 
-            <div class="flex flex-col items-start mx-28 mb-20">
-                <button class="bg-blue-700 hover:bg-blue-950 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-                    <a href="./src/img/me/me.jpg" download>
-                        <span>Download CV</span>
-                    </a>
-                </button>
+                    <div class="flex flex-col items-start mt-10 mx-36 mb-20">
+                        <button class="bg-blue-700 hover:bg-blue-950 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+                            <a href="#" >
+                                <span>Send Message</span>
+                            </a>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-
-        <div class="flex flex-col md:flex-row bg-black px-28">
-            <div class="flex flex-col w-10/12 md:w-1/2 ">
-                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Programming Languages</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Python</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Bash</span>
-                        <span class="text-sm font-medium ">45%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 45%;"> 45%
-                        </div>
-                    </div>
-                </div>
-
-
-                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Web Development</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Django</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Flask</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">FastAPi</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">HTML</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">CSS</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Databases</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Postgresql</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Redis</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">MongoBD</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Sqlite</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Version Control</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Git</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-14 mb-8 text-white font-bold text-2xl">Virtualization and Containers</h3>
-                <div class="mt-2 mb-28 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Docker</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col w-10/12 md:w-1/2 mb-10 md:mb-0">
-                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Networking and OS</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Network+</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Linux</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Windows</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">User Interface</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">PYQT6</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Tailwind CSS</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Other Technologies</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Celery</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Rabbitmq</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Data Science</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Numpy</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Pandas</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <h3 class="mt-20 mb-8 text-white font-bold text-2xl">Language Skills</h3>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">English</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-                <div class="my-2 w-4/5">
-                    <div class="flex justify-between mb-1 text-white">
-                        <span class="text-base font-medium ">Persian</span>
-                        <span class="text-sm font-medium ">85%</span>
-                    </div>
-                    <div class="w-full bg-gray-700 rounded-full ">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                             style="width: 85%;"> 85%
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col md:flex-row bg-gray-900 px-28 py-28 text-white ">
-            <div class="flex flex-col w-1/2 mb-10 md:mb-0">
-                <h3 class="font-bold text-lg mb-5">Knowledge</h3>
-                <ul>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5">Software Engineering</span></li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5">Web Designer</span></li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5"></span>Data Scientist
-                    </li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5"></span>Deployment
-                    </li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5"></span>Network
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-col w-1/2 ">
-                <h3 class="font-bold text-lg mb-5">Interests</h3>
-                <ul>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5">Develop Software</span></li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5">Make UI/UX Design</span></li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5"></span>Site Optimization
-                    </li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5"></span>Deploy
-                    </li>
-                    <li><span class="text-2xl font-bold px-4">&#8224;</span>
-                        <span class="text-base font-light my-1.5"></span>Custom Website
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="bg-black flex flex-col md:flex-row  px-28 py-28 text-white">
-            <div class="flex flex-col w-1/2">
-                <ol class="relative border-l border-white">
-                    <li class="mb-10 ml-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none ">November 2023</time>
-                        <h3 class="text-lg font-bold text-white ">Islamic Azad University West Tehran Branch</h3>
-                        <p class="mb-4 text-base font-normal text-gray-500 ">Master Degree</p>
-                    </li>
-                    <li class="mb-10 ml-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none">February 2020</time>
-                        <h3 class="text-lg font-bold text-white">Islamic Azad University Central Tehran Branch</h3>
-                        <p class="text-base font-normal text-gray-500">Bachelor Degree</p>
-                    </li>
-                    <li class="ml-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none">September 2017</time>
-                        <h3 class="text-lg font-bold text-white">Islamic Azad University, Shahr-e-Rey Branch</h3>
-                        <p class="text-base font-normal text-gray-500">Associate Degree</p>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="flex flex-col mt-8 md:m-0 w-1/2">
-                <ol class="relative border-l border-white">
-                    <li class="mb-10 ml-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 ">2022 - Present</time>
-                        <h3 class="text-lg font-bold text-white ">Petrotech</h3>
-                        <p class="mb-4 text-base font-normal text-gray-500 ">Web and Application Developer</p>
-                    </li>
-                    <li class="mb-10 ml-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 ">2022 - Present</time>
-                        <h3 class="text-lg font-bold text-white">Maktab Sharif</h3>
-                        <p class="text-base font-normal text-gray-500">Education Mentor</p>
-                    </li>
-                    <li class="ml-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                        <time class="mb-1 text-sm font-normal leading-none ">2020 - 2022</time>
-                        <h3 class="text-lg font-bold text-white">Studio Shotino</h3>
-                        <p class="text-base font-normal text-gray-500">Designers and Editor </p>
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class=" flex flex-col bg-gray-900 px-28 py-28 text-white space-y-10 space-x-0 md:space-y-0 md:space-x-8 justify-center md:flex-row">
-            <div class="bg-gray-800 max-w-sm rounded overflow-hidden shadow-lg">
-                <div class="px-8 py-12">
-                    <p class="text-gray-400 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-gray-800 max-w-sm rounded overflow-hidden shadow-lg">
-                <div class="px-8 py-12">
-                    <p class="text-gray-400 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------------------------------------------------------------------------ -->
-    <div class="bg-gray-900 text-white" id="">
-        <h1>hi</h1>
     </div>
 </main>
 
@@ -644,12 +697,5 @@
 <script src="./src/js/init.js"></script>
 <!--<script src="./src/js/script.js"></script>-->
 <!--<script src="./src/js/click.js"></script>-->
-<script>
-
-
-</script>
-
 </body>
-
-
 </html>
