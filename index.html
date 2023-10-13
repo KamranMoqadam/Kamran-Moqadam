@@ -13,13 +13,16 @@
 </head>
 <body class="font-sans">
 
-<div class="flex items-center justify-center h-screen" id="Preloader">
-    <div class="relative">
-        <div class="h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-700"></div>
-        <div class="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-violet-900 animate-spin">
+<div class="fixed w-screen h-screen top-0" style="background-color: white; z-index:1900" id="Preloader">
+    <div class="bg-white flex items-center justify-center h-screen">
+        <div class="relative">
+            <div class="h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-700"></div>
+            <div class="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-violet-900 animate-spin">
+            </div>
         </div>
     </div>
 </div>
+
 <main class="h-screen md:flex" id="main">
     <div class="hidden justify-center items-center h-screen w-1/4 bg-black md:flex" id="LeftSidebar">
         <div class="flex flex-col justify-center items-center">
@@ -30,17 +33,16 @@
             </div>
 
             <div class="text-white text-xl">
-                <ul>
-                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Home"><a href="#Home">Home</a>
+                <ul style="cursor:pointer">
+                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Home">Home
                     </li>
-                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_About"><a href="#About">About</a>
+                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_About">About
                     </li>
-                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Service"><a href="#">Service</a>
+                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Service">Service
                     </li>
-                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Portfolio"><a
-                            href="#">Portfolio</a></li>
-                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_News"><a href="#">News</a></li>
-                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Contact"><a href="#">Contact</a>
+                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Portfolio">Portfolio</li>
+                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_News">News</li>
+                    <li class="hover:text-blue-500 active:text-purple-700 my-2" id="li_Contact">Contact
                     </li>
                 </ul>
             </div>
@@ -68,7 +70,7 @@
                     </svg>
                 </button>
                 <div class="hidden w-full mt-5" id="navbar-hamburger">
-                    <ul class="flex flex-col font-medium ">
+                    <ul class="flex flex-col font-medium" style="cursor:pointer">
                         <li class="m-3 text-white text-center hover:text-blue-500 active:text-purple-700" id="nl_Home">
                             Home
                         </li>
@@ -94,14 +96,15 @@
     </div>
     <!-- ------------------------------------------------------------------------------------------------ -->
 
-    <div class="bg-gray-900 w-screen md:w-3/4" id="Home">
+    <div class="flex flex-row bg-gray-900 w-screen md:w-3/4" id="Home">
         <div class="flex flex-col items-center justify-center h-screen md:flex-row">
-            <div class=" flex flex-col justify-center items-center w-1/3  mb- 10  md:mb-0 md:inline-flex">
+            <div class=" flex flex-col justify-center items-center w-1/3 mx-10 md:inline-flex">
                 <div class="absolute animate-spin rounded-full h-64 w-64 border-t-4 border-b-4 border-purple-500 justify-center items-center"></div>
                 <img src="./src/img/me/me.jpg" alt="its me" class="rounded-full h-56 w-56">
             </div>
             <div class="flex flex-col justify-center w-2/3 text-left ">
-                <h1 class="text-6xl font-black text-white items-center md:items-start">KAMRAN <span>MOQADAM</span></h1>
+                <h1 class="text-6xl font-bold text-white items-center my-10 md:my-2 md:items-start">KAMRAN
+                    <span>MOQADAM</span></h1>
                 <p class="text-white text-lg my-5 pr-5">I am a Web Developer at heart and create features
                     that are
                     best suited for the job
@@ -721,9 +724,8 @@
     </div>
 </main>
 
-<!--<script src="./js/jquery-3.7.1.min.js"></script>-->
+<script src="./src/js/click.js"></script>
 <script src="./src/js/init.js"></script>
 <script src="./src/js/script.js"></script>
-<!--<script src="./src/js/click.js"></script>-->
 </body>
 </html>
